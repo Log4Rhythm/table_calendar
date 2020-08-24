@@ -45,11 +45,11 @@ class _CellWidget extends StatelessWidget {
 
   Decoration _buildCellDecoration() {
     if (isSelected && calendarStyle.renderSelectedFirst && calendarStyle.highlightSelected) {
-      return BoxDecoration(shape: BoxShape.circle, color: calendarStyle.selectedColor);
+      return BoxDecoration(shape: BoxShape.circle, color: calendarStyle.selectedColor, border: Border.all(color: calendarStyle.selectedBorderColor, width: 1.0));
     } else if (isToday && calendarStyle.highlightToday) {
-      return BoxDecoration(shape: BoxShape.circle, color: calendarStyle.todayColor);
+      return BoxDecoration(shape: BoxShape.circle, color: calendarStyle.todayColor, border: Border.all(color: calendarStyle.todayBorderColor, width: 1.0));
     } else if (isSelected && calendarStyle.highlightSelected) {
-      return BoxDecoration(shape: BoxShape.circle, color: calendarStyle.selectedColor);
+      return BoxDecoration(shape: BoxShape.circle, color: calendarStyle.selectedColor, border: Border.all(color: calendarStyle.selectedBorderColor, width: 1.0));
     } else {
       return BoxDecoration(shape: BoxShape.circle);
     }

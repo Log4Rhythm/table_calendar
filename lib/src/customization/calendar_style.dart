@@ -41,8 +41,14 @@ class CalendarStyle {
   /// Background Color of selected day.
   final Color selectedColor;
 
+  /// Border Color of selected day.
+  final Color selectedBorderColor;
+
   /// Background Color of today.
   final Color todayColor;
+
+  /// Border Color of today.
+  final Color todayBorderColor;
 
   /// Color of event markers placed on the bottom of every day containing events.
   final Color markersColor;
@@ -111,7 +117,9 @@ class CalendarStyle {
     this.unavailableStyle = const TextStyle(color: const Color(0xFFBFBFBF)),
     this.eventDayStyle = const TextStyle(),
     this.selectedColor = const Color(0xFF5C6BC0), // Material indigo[400]
+    this.selectedBorderColor = const Color(0xFF5C6BC0), // Material indigo[400]
     this.todayColor = const Color(0xFF9FA8DA), // Material indigo[200]
+    this.todayBorderColor = const Color(0xFF9FA8DA), // Material indigo[200]
     this.markersColor = const Color(0xFF263238), // Material blueGrey[900]
     this.markersAlignment = Alignment.bottomCenter,
     this.markersPositionTop,
